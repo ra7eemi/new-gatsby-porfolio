@@ -69,7 +69,7 @@ export default function HeroSection() {
               </Typography>
               <Box my={2}>
                 <Button
-                  href="mailto:draseinabdrahim@gmail.com"
+                  href="mailto:example@email.com"
                   variant="outlined"
                   color="secondary"
                 >

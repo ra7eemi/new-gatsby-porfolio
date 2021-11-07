@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import Link from "@material-ui/core/Link";
 import { makeStyles } from "@material-ui/core/styles";
-import AppBar from "@material-ui/core/AppBar";
-import ToolBar from "@material-ui/core/ToolBar";
-import Container from "@material-ui/core/Container";
+
+import {AppBar ,Toolbar , Container} from "@material-ui/core";
 import Avatar from "@material-ui/core/Avatar";
 import Hidden from "@material-ui/core/Hidden";
 import IconButton from "@material-ui/core/IconButton";
+
 import MenuIcon from "@material-ui/icons/Menu";
 import SwipeableDrawer from "@material-ui/core/SwipeableDrawer";
 import Divider from "@material-ui/core/Divider";
@@ -42,7 +42,7 @@ export default function Header() {
   return (
     <AppBar position="sticky" color="default">
       <Container maxWidth="md">
-        <ToolBar disableGutters>
+        <Toolbar disableGutters>
           <Avatar className={styles.avatar}>P</Avatar>
           <Hidden xsDown>
             {navigationLinks.map((item) => (
@@ -63,7 +63,7 @@ export default function Header() {
               <MenuIcon />
             </IconButton>
           </Hidden>
-        </ToolBar>
+        </Toolbar>
       </Container>
       <SwipeableDrawer
         anchor="right"
