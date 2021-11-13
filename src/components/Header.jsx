@@ -43,7 +43,7 @@ export default function Header() {
     <AppBar position="sticky" color="default">
       <Container maxWidth="md">
         <Toolbar disableGutters>
-          <Avatar className={styles.avatar}>RX</Avatar>
+          <Avatar className={styles.avatar}>R</Avatar>
           <Hidden xsDown>
             {navigationLinks.map((item) => (
               <Link
